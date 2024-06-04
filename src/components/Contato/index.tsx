@@ -1,4 +1,4 @@
-import { ChangeEvent, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useDispatch } from 'react-redux'
 
 import * as S from './styles'
@@ -9,7 +9,7 @@ import { Botao, BotaoSalvar } from '../../styles'
 
 type Props = ContatosClass
 
-const Tarefa = ({
+const Contato = ({
   email: emailOriginal,
   numero: numeroOriginal,
   titulo: tituloOriginal,
@@ -99,4 +99,4 @@ const Tarefa = ({
   )
 }
 
-export default Tarefa
+export default Contato

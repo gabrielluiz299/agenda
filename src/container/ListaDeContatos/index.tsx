@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux'
 
-import Tarefa from '../../components/Tarefa'
+import Contato from '../../components/Contato'
 import { MainContainer } from '../../styles'
 
 import { RootReducer } from '../../store'
@@ -22,7 +22,7 @@ const ListaDeContatos = () => {
       <ul>
         {contatos.map((t) => (
           <li key={t.titulo}>
-            <Tarefa
+            <Contato
               id={t.id}
               email={t.email}
               titulo={t.titulo}
